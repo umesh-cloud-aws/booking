@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% block css %} {% endblock %}
+    <title>Clinic Appointment Booking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f8;
+            background-image: url('/main.jpg');
+            background-size: cover;
+        }
+
+        header {
+            background-color: #2c7be5;
+            color: white;
+            padding: 5px;
+            text-align: center;
+        }
+        .main{
+            color: white;
+        }
+
+        nav {
+            background-color: #1e5bb8;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+        .btn {
+            background-color: #2c7be5;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #2c7be5;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="main">Clinic Appointment Booking System</h1>
+        <p>Book your appointment easily and quickly</p>
+    </header>
+
+    <!-- 🔥 YOUR OLD NAVBAR CODE (PASTE HERE AS IT IS) -->
+    <div class="navbar">
+        <!-- old navbar html -->
+    </div>
+
+    <!-- PAGE CONTENT -->
+
+
+
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'book_appointment' %}">Book Appointment</a>
+        <a href="{% url 'services' %}">Services</a>
+        <a href="{% url 'contact' %}">Contact</a>
+        <a href="{% url 'login' %}">Login</a>
+    </nav>
+
+
+    {% block content %}
+
+    {% endblock %}
+<footer>
+    welcome our medical
+</footer>
+</body>
+
+</html>

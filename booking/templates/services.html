@@ -1,0 +1,137 @@
+{% extends "home.html" %}
+{% load static %}
+{% block css %}
+<title>Our Services</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f8;
+    }
+
+    h1 {
+        text-align: center;
+        color: #2c7be5;
+        margin-top: 20px;
+    }
+
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .card {
+        background: white;
+        width: 250px;
+        margin: 15px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+
+    .card h3 {
+        color: #1e5bb8;
+    }
+
+    .card p {
+        color: #555;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 15px;
+        background-color: #2c7be5;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .btn:hover {
+        background-color: #1e5bb8;
+    }
+</style>
+{% endblock %}
+{% block content %}
+<h1>Our Medical Services</h1>
+
+<div class="services">
+
+    <div class="card">
+        <h3>General Checkup</h3>
+        <p>Routine health examination and consultation.</p>
+        <a href="/book/" class="btn">Book Now</a>
+    </div>
+
+    <div class="card">
+        <h3>Dental Care</h3>
+        <p>Dental checkup, cleaning, and treatment.</p>
+        <a href="/book/" class="btn">Book Now</a>
+    </div>
+
+    <div class="card">
+        <h3>Eye Care</h3>
+        <p>Vision testing and eye treatment.</p>
+        <a href="/book/" class="btn">Book Now</a>
+    </div>
+
+    <div class="card">
+        <h3>ENT Services</h3>
+        <p>Ear, nose, and throat treatment.</p>
+        <a href="/book/" class="btn">Book Now</a>
+    </div>
+
+    <div class="card">
+        <h3>Pediatrics</h3>
+        <p>Healthcare services for children.</p>
+        <a href="/book/" class="btn">Book Now</a>
+    </div>
+
+    <div class="card">
+        <h3>Physiotherapy</h3>
+        <p>Physical therapy and rehabilitation.</p>
+        <a href="/book/" class="btn">Book Now</a>
+    </div>
+
+    <div class="card">
+        <h3>Cardiology</h3>
+        <p>Heart checkup and cardiac care.</p>
+        <a href="/book/" class="btn">Book Now</a>
+    </div>
+
+    <div class="card">
+        <h3>Orthopedics</h3>
+        <p>Bone and joint treatment.</p>
+        <a href="/book/" class="btn">Book Now</a>
+    </div>
+
+    <div class="card">
+        <h3>Dermatology</h3>
+        <p>Skin care and dermatology services.</p>
+        <a href="/book/" class="btn">Book Now</a>
+    </div>
+
+    <!-- Remove below 2 cards if you want only 10 services -->
+
+    <div class="card">
+        <h3>Neurology</h3>
+        <p>Nervous system and brain treatment.</p>
+        <a href="/book/" class="btn">Book Now</a>
+    </div>
+
+    <div class="card">
+        <h3>Gynecology</h3>
+        <p>Women’s health and maternity care.</p>
+        <a href="/book/" class="btn">Book Now</a>
+    </div>
+
+    <div class="card">
+        <h3>Psychology</h3>
+        <p>Mental health counseling services.</p>
+        <a href="/book/" class="btn">Book Now</a>
+    </div>
+
+</div>
+{% endblock %}

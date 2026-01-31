@@ -1,0 +1,73 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block css %}
+    <title>Book Appointment</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f4f6f8;
+        }
+
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c7be5;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #2c7be5;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1e5bb8;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h2>Book Appointment</h2>
+
+        <form>
+            <label>Patient Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Doctor</label>
+            <select>
+                <option>Select Doctor</option>
+                <option>Dr. Sharma</option>
+                <option>Dr. Verma</option>
+                <option>Dr. Khan</option>
+            </select>
+
+            <label>Date</label>
+            <input type="date">
+
+            <label>Time</label>
+            <input type="time">
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+{% endblock %}
